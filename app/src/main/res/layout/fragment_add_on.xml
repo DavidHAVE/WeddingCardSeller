@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mustika.weddingcardseller.weddingcardseller.fragment.AddOnFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/discount_linear_layout"
+        android:text="Add On"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/addon_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambahan Website Pernikahan ?"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:layout_centerInParent="true"
+                android:layout_above="@+id/discount_linear_layout"
+                android:text="Harga : "
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:layout_centerInParent="true"
+                android:layout_above="@+id/discount_linear_layout"
+                android:text="Rp "
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/web_price_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:layout_centerInParent="true"
+                android:layout_above="@+id/discount_linear_layout"
+                android:text="20.000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

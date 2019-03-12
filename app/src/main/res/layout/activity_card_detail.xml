@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.mustika.weddingcardseller.weddingcardseller.ui.CardDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:orientation="vertical"
+    tools:context="com.mustika.weddingcardseller.weddingcardseller.ui.CardDetailActivity">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/card_image_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:src="@mipmap/ic_launcher"/>-->
+
+    <com.mustika.weddingcardseller.weddingcardseller.helper.TouchImageView
+        android:id="@+id/design_touch_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_margin="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/image_90" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/cardViewColor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_gravity="center"
+                    android:text="Countainer High Cube"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Rp "
+                        android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/price_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="20000"
+                    android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/description_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Size : 12x2,9x2,4 m, Max Loads 28 Tons"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <!--<com.cepheuen.elegantnumberbutton.view.ElegantNumberButton-->
+        <!--android:id="@+id/amount_button"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--app:backGroundColor="@color/colorPrimary"-->
+        <!--app:textSize="8sp"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_marginBottom="10dp"/>-->
+
+    <EditText
+        android:id="@+id/amount_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Jumlah Kartu Undangan"/>
+
+</LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/next_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/next_50" />
+</android.support.design.widget.CoordinatorLayout>
